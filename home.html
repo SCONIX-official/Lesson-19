@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Первая работа с Gulp</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230716195142">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top">
+				<div class="header__container top-header">
+					<div class="top-header__work-time">
+						<span>Mon-Thu:</span> 9:00 AM - 5:30 PM
+					</div>
+					<div class="top-header__contacts">
+						<span>Visit our showroom in 1234 Street Adress City Address, 1234</span>
+						<a href="#" class="top-header__contacts_link">Contact Us</a>
+					</div>
+					<div class="top-header__info info-top">
+						<a href="tel:(00)12345678" class="info-top__number">Call Us: (00) 1234 5678</a>
+						<a href="#" class="info-top__link-fb">
+							<img src="img/header/icon__fb.svg?_v=1637950706816" alt="facebook" class="info-top__fb">
+						</a>
+						<a href="#" class="info-top__link-insta">
+							<img src="img/header/icon_insta.svg?_v=1637950706816" alt="instagram" class="info-top__instagram">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="header__container">
+					<div class="header__menu menu">
+						<button type="button" class="icon-menu">
+							<span></span>
+						</button>
+						<a href="#" class="menu__logo">
+							<img src="img/header/icon__logo.svg" alt="">
+						</a>
+
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="" class="menu__link">Laptopsapto</a></li>
+								<li class="menu__item"><a href="" class="menu__link">Desktop PCs</a></li>
+								<li class="menu__item"><a href="" class="menu__link">Networking Devices</a></li>
+								<li class="menu__item"><a href="" class="menu__link">Printers & Scanners</a></li></a></li>
+								<li class="menu__item"><a href="" class="menu__link">All Other Products</a></li>
+								<li class="menu__item"><a href="" class="menu__link">Repairs</a></li>
+								<li class="menu__item"><a href="#" class="menu__link menu__link_btn">Our Deals</a></li>
+							</ul>
+						</nav>
+						<div class="menu__service-panel">
+							<a href="" class="menu__search">
+								<img src="img/header/icon_search.svg" alt="">
+							</a>
+							<a href="" class="menu__cart">
+								<img src="img/header/icon__cart.svg" alt="">
+							</a>
+							<a href="#" class="menu__account">
+								<picture><source srcset="img/header/avatar.webp" type="image/webp"><img src="img/header/avatar.png" alt="avatar" class="menu__img-profile"></picture>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<!-- <breadcrumps> — Блок ОТКРЫТ:↓▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬↓▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬↓-->
+			<div class="breadcrumps">
+				<div class="breadcrumps__container">
+					<ul class="breadcrumps__list">
+						<li class="breadcrumps__item">
+							<a href="#" class="breadcrumps__link">Home</a>
+						</li>
+						<li class="breadcrumps__item">
+							<a href="#" class="breadcrumps__link">About Us</a>
+						</li>
+						<li class="breadcrumps__item">
+							<a href="#" class="breadcrumps__link">добавления</a>
+						</li>
+						<li class="breadcrumps__item">
+							<a href="#" class="breadcrumps__link">новых хлебных</a>
+						</li>
+						<li class="breadcrumps__item">
+							<a href="#" class="breadcrumps__link">КРОШЕК</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--</breadcrumps> — Блок ЗАКРЫТ:↑———————————————————————————————↑———————————————————————————————↑-->
+			<!-- <about-us> — Блок ОТКРЫТ:↓▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬↓▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬↓-->
+
+			<div class="about-us">
+				<div class="about-us__container">
+					<h1 class="about-us__title">About Us</h1>
+				</div>
+				<div class="about-us__body body-about">
+					<div class="body-about__section body-about__section_black">
+						<div class="body-about__container">
+							<div class="body-about__row">
+								<div class="body-about__column body-about__column_left body-about__column_m-bot">
+									<div class="body-about__body">
+										<h3 class="body-about__title">A Family That Keeps On Growing
+										</h3>
+										<div class="body-about__text">
+											<p>We always aim to please the home market, supplying great computers and hardware at
+												great prices to non-corporate customers, through our large Melbourne CBD showroom
+												and our online store.</p>
+
+											<p> Shop management approach fosters a strong customer service focus in our staff. We
+												prefer to cultivate long-term client relationships rather than achieve quick sales,
+												demonstrated in the measure of our long-term success.</p>
+										</div>
+									</div>
+								</div>
+								<div class="body-about__column body-about__column_right body-about__column_m-top">
+									<div class="body-about__image-ibg_contain body-about__image-cover">
+										<picture><source srcset="img/about-us/01.webp" type="image/webp"><img src="img/about-us/01.jpg" alt=""></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="body-about__section body-about__section_white">
+						<div class="body-about__container">
+							<div class="body-about__row">
+								<div class="body-about__column body-about__column_right body-about__column_m-top">
+									<div class="body-about__image-ibg_contain">
+										<picture><source srcset="img/about-us/02.webp" type="image/webp"><img src="img/about-us/02.jpg" alt=""></picture>
+									</div>
+								</div>
+								<div class="body-about__column body-about__column_left body-about__column_m-bot">
+									<div class="body-about__body">
+										<h3 class="body-about__title body-about__title_icon body-about__title_icon-1">shop.com
+										</h3>
+										<div class="body-about__text">
+											<p>Shop is a proudly Australian owned, Melbourne based supplier of I.T. goods and
+												services,
+												operating since 1991. Our client base encompasses individuals, small business,
+												corporate
+												and government organisations. We provide complete business IT solutions,
+												centred on high quality hardware and exceptional customer service.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="body-about__section body-about__section_black">
+						<div class="body-about__container">
+							<div class="body-about__row">
+								<div class="body-about__column body-about__column_left body-about__column_m-bot">
+									<div class="body-about__body">
+										<h3 class="body-about__title body-about__title_icon body-about__title_icon-2">You're In
+											Safe Hands
+										</h3>
+										<div class="body-about__text">
+											<p>Experience a 40% boost in computing from last generation. MSI Desktop equips the
+												10th Gen.
+												Intel® Core™ i7 processor with the upmost computing power to bring you an
+												unparalleled
+												gaming experience.</p>
+
+											<p>*Performance compared to i7-9700. Specs varies
+												by model.</p>
+										</div>
+									</div>
+								</div>
+								<div class="body-about__column body-about__column_right body-about__column_m-top">
+									<div class="body-about__image-ibg_contain">
+										<picture><source srcset="img/about-us/03.webp" type="image/webp"><img src="img/about-us/03.jpg" alt=""></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="body-about__section body-about__section_white">
+						<div class="body-about__container">
+							<div class="body-about__row">
+								<div class="body-about__column body-about__column_right body-about__column_m-top">
+									<div class="body-about__image-ibg_contain">
+										<picture><source srcset="img/about-us/04.webp" type="image/webp"><img src="img/about-us/04.jpg" alt=""></picture>
+									</div>
+								</div>
+								<div class="body-about__column body-about__column_left body-about__column_m-bot">
+									<div class="body-about__body">
+										<h3 class="body-about__title body-about__title_icon body-about__title_icon-3">The Highest
+											Quality of Products
+										</h3>
+										<div class="body-about__text">
+											<p>We guarantee the highest quality of the products we sell. Several decades of
+												successful
+												operation and millions of happy customers let us feel certain about that. Besides,
+												all
+												items we sell pass thorough quality control, so no characteristics mismatch
+												can escape the eye of our professionals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="body-about__section body-about__section_black">
+						<div class="body-about__container">
+							<div class="body-about__row">
+								<div class="body-about__column body-about__column_left body-about__column_m-bot">
+									<div class="body-about__body">
+										<h3 class="body-about__title body-about__title_icon body-about__title_icon-4">Delivery to
+											All Regions
+										</h3>
+										<div class="body-about__text">
+											<p>We deliver our goods all across Australia. No matter where you live, your order will
+												be
+												shipped in time and delivered right to your door or to any other location you have
+												stated.
+												The packages are handled with utmost care, so the ordered products will
+												be handed to you safe and sound, just like you expect them to be.</p>
+										</div>
+									</div>
+								</div>
+								<div class="body-about__column body-about__column_right body-about__column_m-top">
+									<div class="body-about__image-ibg_contain">
+										<picture><source srcset="img/about-us/05-2.webp" type="image/webp"><img src="img/about-us/05-2.jpg" alt=""></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--</about-us> — Блок ЗАКРЫТ:↑———————————————————————————————↑———————————————————————————————↑-->
+			<!-- <article> — Блок ОТКРЫТ:↓▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬↓▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬↓-->
+
+			<div class="article">
+				<div class="article__slider slider-article">
+					<div class="slider-article__container">
+
+						<div class="slider-article__slider swiper">
+
+							<div class="slider-article__wrapper swiper-wrapper">
+
+								<div class="slider-article__slide swiper-slide">
+									<p class="swiper-slide__review">
+										Мой первый слайдер)) самое трудное уже позади.. главное понял как он в основном устроен,
+										осталось теперь сделать еще несколько штук с различными задачами, к примеру фотки, та и у
+										них есть несколько различных видов, вообщем ПРАКТИКА ПРАКТИКА ПРАКТИКА))
+										---сложно было вывести те точки, оказывается настройки чучуть устарели, именно они отняли
+										большую часть времени... :)
+									</p>
+									<div class="swiper-slide__name">- SCONIX fls</div>
+								</div>
+								<div class="slider-article__slide swiper-slide">
+									<p class="swiper-slide__review">
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quidem natus quibusdam
+										sint dignissimos distinctio praesentium consequuntur cupiditate tenetur. Ratione id,
+										distinctio eum animi dignissimos deleniti earum ipsam eveniet optio.
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quidem natus quibusdam
+										sint dignissimos distinctio praesentium consequuntur cupiditate tenetur. Ratione id,
+										distinctio eum animi dignissimos deleniti earum ipsam eveniet optio.
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quidem natus quibusdam
+										sint dignissimos distinctio praesentium consequuntur cupiditate tenetur. Ratione id,
+										distinctio eum animi dignissimos deleniti earum ipsam eveniet optio.
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quidem natus quibusdam
+										sint dignissimos distinctio praesentium consequuntur cupiditate tenetur. Ratione id,
+										distinctio eum animi dignissimos deleniti earum ipsam eveniet optio.
+									</p>
+									<div class="swiper-slide__name">- Temaaa Brooooooooooooooown</div>
+								</div>
+								<div class="slider-article__slide swiper-slide">
+									<p class="swiper-slide__review">
+										Lorem ipsum <span>d</span>olor sit <span>a</span>met consectetur, adipisicing
+										e<span>l</span>it. Velit <span>b</span>ere pr<span>a</span>vident, vero <span>yo</span>ur
+										perferendis eos expedita quaerat a accusamus <span>b</span>ody quisquam totam fuga
+										consequuntur sint aliquam cupiditate animi! Mollitia, aspernatur animi? Ipsum, qui?
+									</p>
+									<div class="swiper-slide__name">- Temaa Broown</div>
+								</div>
+								<div class="slider-article__slide swiper-slide">
+									<p class="swiper-slide__review">
+										Lorem ipsum <span>d</span>olor sit <span>a</span>met consectetur, adipisicing
+										e<span>l</span>it. Velit <span>b</span>ere pr<span>a</span>vident, vero <span>yo</span>ur
+										perferendis eos expedita quaerat a accusamus <span>b</span>ody quisquam totam fuga
+										consequuntur sint aliquam cupiditate animi! Mollitia, aspernatur animi? Ipsum, qui?
+									</p>
+									<div class="swiper-slide__name">- Temaa Broown</div>
+								</div>
+								<div class="slider-article__slide swiper-slide">
+									<p class="swiper-slide__review">
+										Lorem ipsum <span>d</span>olor sit <span>a</span>met consectetur, adipisicing
+										e<span>l</span>it. Velit <span>b</span>ere pr<span>a</span>vident, vero <span>yo</span>ur
+										perferendis eos expedita quaerat a accusamus <span>b</span>ody quisquam totam fuga
+										consequuntur sint aliquam cupiditate animi! Mollitia, aspernatur animi? Ipsum, qui?
+									</p>
+									<div class="swiper-slide__name">- Temaa Broown</div>
+								</div>
+
+							</div>
+							<div class="swiper__control control-swiper">
+								<div class="control-swiper__container">
+
+									<a href="#" class="control-swiper__btn">Leave Us A Review </a>
+
+									<div class="control-swiper__pagination swiper-pagination">Тут буллеты</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--</article> — Блок ЗАКРЫТ:↑———————————————————————————————↑———————————————————————————————↑-->
+			<!-- <help> — Блок ОТКРЫТ:↓▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬↓▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬↓-->
+
+			<div class="help">
+				<div class="help__container">
+					<div class="help__row">
+						<div class="help__column">
+							<div class="help__content">
+								<div class="help__image-ibg_contain">
+									<img src="img/Help/01.svg" alt="Нет фоток">
+								</div>
+								<div class="help__body">
+									<div class="help__title">Product Support</div>
+									<p class="help__text">Up to 3 years on-site warranty available for your peace of mind.</p>
+								</div>
+							</div>
+						</div>
+						<div class="help__column">
+							<div class="help__content">
+								<div class="help__image-ibg_contain">
+									<img src="img/Help/02.svg" alt="Нет фоток">
+								</div>
+								<div class="help__body">
+									<div class="help__title">Product Support</div>
+									<p class="help__text">Up to 3 years on-site warranty available for your peace of mind.</p>
+								</div>
+							</div>
+						</div>
+						<div class="help__column">
+							<div class="help__content">
+								<div class="help__image-ibg_contain">
+									<img src="img/Help/03.svg" alt="Нет фоток">
+								</div>
+								<div class="help__body">
+									<div class="help__title">Product Support</div>
+									<p class="help__text">Up to 3 years on-site warranty available for your peace of mind.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--</help> — Блок ЗАКРЫТ:↑———————————————————————————————↑———————————————————————————————↑-->
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<!-- <Шапка> — Блок ОТКРЫТ:↓▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬↓▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬↓-->
+				<div class="footer__top top-footer">
+					<div class="top-footer__item">
+						<h3 class="top-footer__title">Sign Up To Our Newsletter.</h3>
+						<p class="top-footer__text">Be the first to hear about the latest offers.</p>
+					</div>
+					<div class="top-footer__item">
+						<form action="#" class="top-footer__form form">
+							<input autocomplete="off" type="email" name="form[text]" data-error="Ошибка" placeholder="Your Email" class="form__input">
+							<button type="submit" class="form__button">Subscribe</button>
+						</form>
+					</div>
+				</div>
+				<!--</Шапка> — Блок ЗАКРЫТ:↑————————————————————————————↑———————————————————————————————↑-->
+
+
+
+
+				<!-- <Тело> — Блок ОТКРЫТ:↓▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬↓▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬↓-->
+				<div class="footer__body body-footer">
+					<div data-spollers="880,max" data-one-spoller class="spollers">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Information</button>
+							<ul class="spollers__body">
+								<li class="spollers__object">
+									<a class="spollers__link" href="#">About Us</a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> About Zip</a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Privacy Policy </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Search </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Terms </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Orders and Returns </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Contact Us </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Advanced Search </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Newsletter Subscription </a>
+								</li>
+							</ul>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">PC Parts</button>
+							<ul class="spollers__body">
+								<li class="spollers__object">
+									<a class="spollers__link" href="#">CPUS</a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Add On Cards</a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Hard Drives (Internal) </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Graphic Cards </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Keyboards / Mice </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Cases / Power Supplies /
+										Cooling </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> RAM (Memory) </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Software </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Speakers / Headsets </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Motherboards </a>
+								</li>
+							</ul>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title"> Desktop PCs </button>
+							<ul class="spollers__body">
+								<li class="spollers__object">
+									<a class="spollers__link" href="#">Custom PCs</a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Servers </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> MSI All-In-One PCs </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> HP/Compaq PCs </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> ASUS PCs </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Tecs PCs </a>
+								</li>
+							</ul>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title"> Laptops </button>
+							<ul class="spollers__body">
+								<li class="spollers__object">
+									<a class="spollers__link" href="#">Evryday Use Notebooks</a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> MSI Workstation Series </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> MSI Prestige Series </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Tablets and Pads </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Netbooks </a>
+								</li>
+								<li class="spollers__object">
+									<a class="spollers__link" href="#"> Infinity Gaming Notebooks </a>
+								</li>
+							</ul>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title"> Address </button>
+							<ul class="spollers__body">
+								<li class="spollers__object">
+									<span class="spollers__string">Address: 1234 Street Adress City Address, 1234</span>
+								</li>
+								<li class="spollers__object">
+									<span class="spollers__string">Phones:<a href="tel:(00)12345678" class="spollers__link"><span class="bg-blue"> (00) 1234 5678</span>
+								</li>
+								<li class="spollers__object">
+									<span class="spollers__string">We are open: Monday-Thursday: 9:00
+										AM - 5:30 PM</span>
+								</li>
+								<li class="spollers__object">
+									<span class="spollers__string">Friday: 9:00 AM - 6:00 PM</span>
+								</li>
+								<li class="spollers__object">
+									<span class="spollers__string">Saturday: 11:00 AM - 5:00 PM</span>
+								</li>
+								<li class="spollers__object">
+									<span class="spollers__string">E-mail:<a href="#" class="spollers__link"> <span class="bg-blue">
+												shop@email.com</span>
+										</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--</Тело> — Блок ЗАКРЫТ:↑————————————————————————————↑———————————————————————————————↑-->
+
+
+
+
+
+				<!-- <Низ> — Блок ОТКРЫТ:↓▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬↓▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬↓-->
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__row">
+						<div class="bottom-footer__item bottom-footer__item_scl">
+							<a class="bottom-footer__image" href="#">
+								<img src="img/footer/icon_fb.svg" alt="">
+							</a>
+							<a class="bottom-footer__image" href="#">
+								<img src="img/footer/icon_inst.svg" alt="">
+							</a>
+						</div>
+						<div class="bottom-footer__item bottom-footer__item_crt">
+							<a href="#" class="bottom-footer__cart">
+								<img src="img/footer/card_01.svg" alt="">
+							</a>
+							<a href="#" class="bottom-footer__cart">
+								<img src="img/footer/card_02.svg" alt="">
+							</a>
+							<a href="#" class="bottom-footer__cart">
+								<img src="img/footer/card_03.svg" alt="">
+							</a>
+							<a href="#" class="bottom-footer__cart">
+								<img src="img/footer/card_04.svg" alt="">
+							</a>
+							<a href="#" class="bottom-footer__cart">
+								<img src="img/footer/card_05.svg" alt="">
+							</a>
+						</div>
+						<div class="bottom-footer__item bottom-footer__item_cpr">
+							<p class="bottom-footer__copyright">Copyright © 2020 Shop Pty. Ltd.</p>
+						</div>
+					</div>
+				</div>
+				<!--</Низ> — Блок ЗАКРЫТ:↑————————————————————————————↑———————————————————————————————↑-->
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20230716195142"></script>
+</body>
+
+</html>
